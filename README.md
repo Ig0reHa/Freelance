@@ -1,6 +1,6 @@
 "# Freelance" 
 
-Мои проэкты: 
+Мои проекты: 
 https://ig0reha.github.io/S-Mitler/
 
 
