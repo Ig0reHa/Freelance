@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ULTIMATE SPORT</title>
+        <meta name="description" content="HTML framework description">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:500,800,900" rel="stylesheet">
+        <!-- end fonts -->
+
+        <!-- BOOTSTRAP -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+         <!-- end styles -->
+
+         <script src="js/libs/jquery-1.10.2.min.js"></script>
+         <script src="js/libs/jquery-ui.js"></script>
+         <script src="js/libs/jquery.countdown.min.js"></script>
+         <!-- end jQuery -->
+        
+        <script src="js/libs/modernizr-2.5.3.min.js"></script>
+         <!-- end modernizr -->
+
+        <!-- Semantic HTML5 Support on old IE -->
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!--[if gte IE 9]>
+            <style type="text/css">
+                .gradient {
+                    filter: none;
+                }
+            </style>
+        <![endif]-->
+    </head>
+    <!-- end head -->
+
+    <body>
+                
+        <div class="preloader"></div>
+
+        <header class="top_header">
+            <div class="top_line">
+                <div class="wrapper">
+                    <div class="line">
+                        <div class="contact_info">
+                            <span class="email"><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@ultimatesportcom">info@ultimatesportcom</a></span>
+                            <span class="phone"><i class="fa fa-mobile" aria-hidden="true"></i> +563 - 65 455 444</span>
+                        </div>
+                        <div class="social_search">
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="search_form">
+                                <form class="search">
+                                    <input type="text" name="" class="search_field" placeholder="Type here" />
+                                    <input type="submit" class="search_button" value="&#xf002" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="top_navigation">
+                <div class="wrapper">
+                    <div class="line">
+                        <div class="logo">
+                            <h1>Ultimate Sport</h1>
+                        </div>
+                        <ul class="header_menu">
+                            <li class="current"><a href="#">Home</a></li>
+                            <li><a href="#">Blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Page item 1</a></li>
+                                    <li><a href="">Page item 2</a></li>
+                                    <li><a href="">Page item 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Matches</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="homeslider">
+                <div class="slide_item">
+                    <figure>
+                        <img src="css/images/slide1.jpg" alt />
+                        <figcaption>
+                            <div class="wrapper">
+                                <div class="slider_data">
+                                    <span class="ale_date">18 October 2017, 18:00</span>
+                                    <div class="ale_matchnames">
+                                       <div class="item_match_name">FC Zimbru  -  FC Sheriff</div>
+                                    </div>
+                                    <div class="ale_place">
+                                        <div class="item_place">Chisinau, Arena Zimbru</div>
+                                    </div>
+                                    <div class="ale_timer">
+                                        <div id="getting-started" class="time_section"></div>
+                                        <script type="text/javascript">
+                                            $("#getting-started")
+                                                .countdown("2020/07/18", function(event) {
+                                                    $(this).html(
+                                                        event.strftime(''
+                                                            + '<div class="item"><span>%-w</span> Week%!w </div>'
+                                                            + '<div class="item"><span>%-d</span> Day%!d </div>'
+                                                            + '<div class="item"><span>%H</span> Hour%!H </div>'
+                                                            + '<div class="item"><span>%M</span> Minute%!M </div>'
+                                                            + '<div class="item"><span>%S</span> Second%!S </div>')
+                                                        );
+                                                });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="slide_item">
+                    <figure>
+                        <img src="css/images/slide2.jpg" alt />
+                        <figcaption>
+                            <div class="wrapper">
+                                <div class="slider_data">
+                                    <span class="ale_date">18 October 2017, 18:00</span>
+                                    <div class="ale_matchnames">
+                                        <div class="item_match_name">FC Zimbru  -  FC Sheriff</div>
+                                    </div>
+                                    <div class="ale_place">
+                                        <div class="item_place">Chisinau, Arena Zimbru</div>
+                                    </div>
+                                    <div class="ale_timer">
+                                        <div id="two-started" class="time_section"></div>
+                                        <script type="text/javascript">
+                                            $("#two-started")
+                                                .countdown("2019/07/18", function(event) {
+                                                    $(this).html(
+                                                        event.strftime(''
+                                                            + '<div class="item"><span>%-w</span> Week%!w </div>'
+                                                            + '<div class="item"><span>%-d</span> Day%!d </div>'
+                                                            + '<div class="item"><span>%H</span> Hour%!H </div>'
+                                                            + '<div class="item"><span>%M</span> Minute%!M </div>'
+                                                            + '<div class="item"><span>%S</span> Second%!S </div>')
+                                                    );
+                                                });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="top_news">
+                <div class="wrapper">
+                    <div class="line">
+                        <div class="news_title">
+                            Breaking News
+                            <div class="breaking_nav">
+                                <span class="prev_news_title"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                                <span class="next_news_title"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <div class="news_slider">
+                            <div class="news_item">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, tempore?
+                            </div>
+                            <div class="news_item">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, tempore?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="matches">
+            <div class="wrapper">
+                <div class="line">
+                    <div class="last_match">
+                        <h3 class="widget_title"><span>Last</span> Match</h3>
+
+                        <div class="match_container">
+                            <div class="place_data">
+                                <span class="ale_date">18 October / 17:00</span>
+                                <span class="ale_place">Zimbru Arena Stadium</span>
+                                <span class="ale_liga">National League</span>
+                            </div>
+                            <div class="match_report_table">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <a href="#"><img src="css/images/logo_1.png" alt /></a>
+                                    </div>
+                                    <span class="teamname"><a href="#">FC Zimbru</a></span>
+                                    <span class="teamcity">Chisinau</span>
+                                </div>
+                                <div class="first_scores">
+                                    <span class="score">2</span>
+                                    <span class="player_name">H. Hancock</span><br>
+                                    (19 min)<br>
+                                    <span class="player_name">Dylan Gray</span><br>
+                                    (57 min)<br>
+                                </div>
+                                <div class="dots">
+                                    :
+                                </div>
+                                <div class="second_scores">
+                                    <span class="score">1</span>
+                                    <span class="player_name">Ronny</span> <br>
+                                    (29 min)<br>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_image">
+                                        <a href="#"><img src="css/images/logo_2.png" alt /></a>
+                                    </div>
+                                    <span class="teamname"><a href="#">FC Dacia</a></span>
+                                    <span class="teamcity">Chisinau</span>
+                                </div>
+                            </div>
+                            <a href="#" class="ale_more">More info</a>
+                        </div>
+                    </div>
+                    <div class="all_matches">
+                        <h3 class="widget_title"><span>All</span> Matches</h3>
+
+                        <div class="list_matches" id="last_matches">
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">0-0</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">0-0</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">0-0</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">0-0</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list_matches" id="future_matches">
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">18 October / 17:00</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">18 October / 17:00</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">18 October / 17:00</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match_item">
+                                <div class="first_team">
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="match_stats">
+                                    <span class="score">18 October / 17:00</span>
+                                    <span class="links"><a href="#">view report</a> / <a href="#">goals</a> / <a href="#">video</a> </span>
+                                </div>
+                                <div class="second_team">
+                                    <div class="team_data">
+                                        <span class="teamname">
+                                            FC Zimbru
+                                        </span>
+                                        <span class="teamcity">
+                                            Chisinau
+                                        </span>
+                                    </div>
+                                    <div class="team_image">
+                                        <img src="css/images/logo_small.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buttons_matches">
+                            <span class="last_matches disabled">Lates matches</span>
+                            <span class="future_matches">Futures matches</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ale_players">
+            <div class="wrapper">
+                <h3 class="widget_title"><span>Popular</span> Players Stats</h3>
+                <div class="players_list">
+                    <div class="players_slider">
+                        <div class="item_player">
+                            <div class="main_info">
+                                <div class="photo_container">
+                                    <img src="css/images/player.jpg" alt="" />
+                                    <span class="number">15</span>
+                                </div>
+                                <div class="info">
+                                    <h5>Claus Rosenberg</h5>
+                                    <span class="position">GoalKeeper</span>
+                                    <div class="skills">
+                                        Played Matches: 130<br>
+                                        Yellow Cards: <span class="yellow_card">5</span><br>
+                                        Red Cards: <span class="red_card">1</span><br>
+                                        Matches with no goals: 98<br>
+                                        Minutues Played: 11.700<br>
+                                        Player Number: 5<br>
+                                    </div>
+                                    <div class="overall">
+                                        <span>94%</span>
+                                        Overall Skills
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additional_info">
+                                <h5>About player</h5>
+                                <span>Some interesting facts</span>
+                                <div class="skills">
+                                    Nationality: <strong>England</strong><br>
+                                    Age: <strong>24 Years</strong><br>
+                                    Length: <strong>193 cm</strong><br>
+                                    Weight: <strong>80 kg</strong><br>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim illo inventore iusto neque nostrum optio quia repudiandae sed tempore.</p>
+                            </div>
+                        </div>
+                        <div class="item_player">
+                            <div class="main_info">
+                                <div class="photo_container">
+                                    <img src="css/images/player.jpg" alt="" />
+                                    <span class="number">23</span>
+                                </div>
+                                <div class="info">
+                                    <h5>Iker Kasillias</h5>
+                                    <span class="position">GoalKeeper</span>
+                                    <div class="skills">
+                                        Played Matches: 30<br>
+                                        Yellow Cards: <span class="yellow_card">8</span><br>
+                                        Red Cards: <span class="red_card">3</span><br>
+                                        Matches with no goals: 8<br>
+                                        Minutues Played: 1170<br>
+                                        Player Number: 23<br>
+                                    </div>
+                                    <div class="overall">
+                                        <span>89%</span>
+                                        Overall Skills
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="additional_info">
+                                <h5>About player</h5>
+                                <span>Some interesting facts</span>
+                                <div class="skills">
+                                    Nationality: <strong>Russian</strong><br>
+                                    Age: <strong>21 Years</strong><br>
+                                    Length: <strong>123 cm</strong><br>
+                                    Weight: <strong>40 kg</strong><br>
+                                </div>
+                                <p>Amet enim illo inventore iusto neque nostrum optio quia repudiandae sed tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player_nav">
+                        <span class="prev_player"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                        <span class="next_player"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="success">
+            <div class="wrapper">
+                <h3 class="widget_title"><span>SUCCESS</span> STORY</h3>
+                <span class="subtitle">About the Club</span>
+
+                <div class="club_stats">
+                    <div class="stats_box">
+                        <p>Maecenas iaculis nulla vel tempor consequat. Pellentesque at venenatis diam. Vivamus dapibus enim non consectetur malesuada. In volutpat congue nulla, ac pharetra massa. Aliquam ullamcorper sodales nunc, a efficitur sem euismod nec. Nam id porttitor tellus. Donec eu varius justo. Praesent finibus erat fermentum enim molestie sollicitudin. Donec molestie neque sed gravida egestas. Suspendisse vitae facilisis augue.</p>
+                        <div class="stats_icons">
+                            <div class="iconbox">
+                                <div class="icon">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <span class="count">140</span>
+                                <span class="title">internation matches</span>
+                            </div>
+                            <div class="iconbox">
+                                <div class="icon">
+                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                </div>
+                                <span class="count">12</span>
+                                <span class="title">trophies win</span>
+                            </div>
+                            <div class="iconbox">
+                                <div class="icon">
+                                    <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                </div>
+                                <span class="count">389</span>
+                                <span class="title">win matches</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boss">
+                        <img src="css/images/boss.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe_box">
+            <div class="wrapper">
+                <h3 class="widget_title"><span>Subcribe</span> to our newsletters</h3>
+                <span class="subtitle">Tell Us About You</span>
+
+                <form class="subscribe_form">
+                    <input type="text" name="" class="subscribe_field" placeholder="Type here your Email" />
+                    <input type="submit" value="Subscribe me" class="subscribe_submit"/>
+                </form>
+            </div>
+        </section>
+
+        <section class="shop_items">
+            <div class="wrapper">
+                <h3 class="widget_title"><span>Our</span> Shop</h3>
+                <span class="subtitle">From our club the best attributes</span>
+
+                <div class="shop_nav">
+                    <span class="prev_shop_item"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                    <span class="next_shop_item"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+
+                <div class="shop_slider">
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                    <div class="shop_item">
+                        <h3>First Cool Product</h3>
+                        <span class="category">For Men</span>
+                        <div class="shoe">
+                            <img src="css/images/shoe.png" alt="" />
+                        </div>
+                        <div class="button_shop">
+                            <span class="purchase">Purchase now</span>
+                            <span class="price">119$</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="top_footer">
+            <div class="top_line">
+                <div class="footer_items">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12">
+                                <div class="about_us f_item">
+                                    <h3>About Us</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, nemo odio quam.</p>
+                                    <span>Address: <strong>1645, Las Vegas, Nevada</strong></span>
+                                    <span>Call: <strong>+700-333-222</strong></span>
+                                    <span>Email: <strong>info.soccer@gmail.com</strong></span>
+                                    <span>Skype: <strong>info.soccer</strong></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <div class="recent_news f_item">
+                                    <h3>Recent news</h3>
+                                    <div class="news_box">
+                                        <img src="css/images/r_news_1.png" alt="">
+                                        <div class="r_block">
+                                            <span>Lorem ipsum d caolor sit amet care ila</span>
+                                            <br>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>16 Sep 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="news_box">
+                                        <img src="css/images/r_news_2.png" alt="">
+                                        <div class="r_block">
+                                            <span>Lorem ipsum d caolor sit amet care ila</span>
+                                            <br>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>16 Sep 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="news_box">
+                                        <img src="css/images/r_news_3.png" alt="">
+                                        <div class="r_block">
+                                            <span>Lorem ipsum d caolor sit amet care ila</span>
+                                            <br>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>16 Sep 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-12">
+                                <div class="soccer_products f_item">
+                                    <h3>SOCCER PRODUCTS</h3>
+                                    <ul>
+                                        <li><a href="#">Shoes (2)</a></li>
+                                        <li><a href="#">Accessory (8)</a></li>
+                                        <li><a href="#">Sport Wear (10)</a></li>
+                                        <li><a href="#">Man (3)</a></li>
+                                        <li><a href="#">Woman (1)</a></li>
+                                        <li><a href="#">T-Shirt (4)</a></li>
+                                        <li><a href="#">T-Shirt (4)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="recent_comments f_item">
+                                    <h3>RECENT COMMENTS</h3>
+                                    <div class="comments_box">
+                                        <img src="css/images/r_comments_1.png" alt="">
+                                        <div class="r_block">
+                                            <span><strong>Nicolas Ford<br></strong>Commented On 02 Sep 2018</span>
+                                            <span class="comment">Nice and good!</span>
+                                        </div>
+                                    </div>
+                                    <div class="comments_box">
+                                        <img src="css/images/r_comments_2.png" alt="">
+                                        <div class="r_block">
+                                            <span><strong>Nicolas Ford<br></strong>Commented On 02 Sep 2018</span>
+                                            <span class="comment">Nice and good!</span>
+                                        </div>
+                                    </div>
+                                    <div class="comments_box">
+                                        <img src="css/images/r_comments_3.png" alt="">
+                                        <div class="r_block">
+                                            <span><strong>Nicolas Ford<br></strong>Commented On 02 Sep 2018</span>
+                                            <span class="comment">Nice and good!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <section class="bottom_line">
+            <span>© 2017 - All Rights Reserved</span>
+        </section>
+
+        <script src="js/libs/slick.min.js"></script>
+        <!-- end libs -->
+
+        <script src="js/scripts.js"></script>
+        <!-- end custom -->
+    </body>
+    <!-- end body -->
+</html>
